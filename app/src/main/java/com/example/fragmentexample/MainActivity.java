@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity implements RedFragment.OnFra
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
     public void onFragmentInteraction(String title) {
         Log.i("SEND", title);
     }
